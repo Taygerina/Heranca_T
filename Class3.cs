@@ -8,12 +8,14 @@ namespace Herança
 {
     class Contapoupanca : Conta
     {
+        //declarando as Variaveis de juros e poupança
         public double TaxaJuros { get; set; }
 
         public Contapoupanca(int numero, string titular, double saldo, double taxaJuros) : base (numero,titular,saldo)
         {
             TaxaJuros = taxaJuros;
         }
+        //utilizando  Saldo
         public void atualizacaoSaldo()
         {
             Saldo += Saldo * TaxaJuros;
